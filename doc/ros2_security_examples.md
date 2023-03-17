@@ -412,28 +412,12 @@ ros2 run demo_nodes_cpp listener
 
 ### Reference
 
-https://www.youtube.com/watch?v=5ZR3zw_luc4
+https://docs.ros.org/en/humble/Tutorials/Advanced/Security/Introducing-ros2-security.html
 
-https://vimeo.com/769972405
+https://docs.ros.org/en/humble/Tutorials/Advanced/Security/Access-Controls.html
 
-https://zenoh.io/blog/2021-04-28-ros2-integration/
+https://github.com/ros-swg/turtlebot3_demo
 
-https://github.com/eclipse-zenoh/zenoh-plugin-dds/#trying-it-out
+https://arxiv.org/pdf/2208.02615.pdf
 
-https://zenoh.io/docs/manual/tls/
-
-https://zenoh.io/docs/manual/user-password/
-
-https://github.com/orgs/eclipse-zenoh/projects/2/views/4
-
-https://www.youtube.com/watch?v=1NE8cU72frk
-
-https://www.youtube.com/watch?v=9h01_MSKPS0
-
-https://cyclonedds.io/docs/cyclonedds/latest/security.html
-
-https://fast-dds.docs.eprosima.com/en/latest/fastdds/security/auth_plugin/auth_plugin.html
-https://fast-dds.docs.eprosima.com/en/v2.9.1/fastdds/ros2/ros2_configure.html
-
-
-
+https://github.com/open-rmf/rmf_demos/blob/main/docs/secure_office_world.md
