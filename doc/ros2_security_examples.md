@@ -321,6 +321,11 @@ export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 ros2 run demo_nodes_cpp listener
 ``` 
 
+To check fastrtps version
+```bash
+dpkg -l | grep fastrtps
+``` 
+
 ### Enabling security through CycloneDDS profiles
 
 - Terminal 1
@@ -408,6 +413,11 @@ ros2 run demo_nodes_cpp listener
 ```bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 ros2 run demo_nodes_cpp listener
+``` 
+
+To check fastrtps version
+```bash
+dpkg -l | grep cyclonedds
 ``` 
 
 ### Reference
