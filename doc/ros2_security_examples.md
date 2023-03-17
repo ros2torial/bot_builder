@@ -437,3 +437,4 @@ https://www.omg.org/spec/DDS-SECURITY/1.1/PDF
 https://fast-dds.docs.eprosima.com/en/v2.6.4/fastdds/security/security.html
 
 https://cyclonedds.io/docs/cyclonedds/latest/security/example_configuration.html?highlight=security
+https://github.com/eclipse-cyclonedds/cyclonedds/blob/master/docs/manual/_static/security_by_config.xml
