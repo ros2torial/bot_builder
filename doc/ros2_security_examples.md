@@ -415,7 +415,7 @@ export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 ros2 run demo_nodes_cpp listener
 ``` 
 
-To check fastrtps version
+To check cyclonedds version
 ```bash
 dpkg -l | grep cyclonedds
 ``` 
