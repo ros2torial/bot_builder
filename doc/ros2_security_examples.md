@@ -431,3 +431,9 @@ https://github.com/ros-swg/turtlebot3_demo
 https://arxiv.org/pdf/2208.02615.pdf
 
 https://github.com/open-rmf/rmf_demos/blob/main/docs/secure_office_world.md
+
+https://www.omg.org/spec/DDS-SECURITY/1.1/PDF
+
+https://fast-dds.docs.eprosima.com/en/v2.6.4/fastdds/security/security.html
+
+https://cyclonedds.io/docs/cyclonedds/latest/security/example_configuration.html?highlight=security
