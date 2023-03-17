@@ -1,7 +1,7 @@
 
 # Zenoh ros2 examples
 
-It contains examples of ros2 topic, service, action communication using zenoh along with some security examples.
+It contains examples of ros2 topic, service and action communication using zenoh along with some security examples.
 
 ### Topic
 
@@ -105,17 +105,17 @@ mkdir minica
 cd minica
 minica localhost
 cd ..
-touch router.json
-touch client.json
+touch router.json5
+touch client.json5
 ```
 
 ```bash
-gedit router.json
+gedit router.json5
 ``` 
 
 then paste the below code
 
-```json
+```json5
 {
   mode: "router",
   listen: {
@@ -133,12 +133,12 @@ then paste the below code
 ``` 
 
 ```bash
-gedit client.json
+gedit client.json5
 ``` 
 
 then paste the below code
 
-```json
+```json5
 {
   mode: "client",
   connect: {
@@ -158,7 +158,7 @@ then paste the below code
 
 ```bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
-zenohd -c /tmp/zenoh/router.json
+zenohd -c /tmp/zenoh/router.json5
 ``` 
 
 - Terminal 3
@@ -173,7 +173,7 @@ ROS_DOMAIN_ID=4 ros2 run examples_rclcpp_minimal_publisher publisher_member_func
 ```bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 export RUST_LOG=info
-zenoh-bridge-dds -c /tmp/zenoh/client.json -d 4
+zenoh-bridge-dds -c /tmp/zenoh/client.json5 -d 4
 ``` 
 
 - Terminal 5
@@ -181,7 +181,7 @@ zenoh-bridge-dds -c /tmp/zenoh/client.json -d 4
 ```bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 export RUST_LOG=info
-zenoh-bridge-dds -c /tmp/zenoh/client.json -d 6
+zenoh-bridge-dds -c /tmp/zenoh/client.json5 -d 6
 ``` 
 
 - Terminal 6
@@ -223,17 +223,17 @@ mkdir server
 cd server
 minica localhost
 cd ..
-touch router.json
-touch client.json
+touch router.json5
+touch client.json5
 ```
 
 ```bash
-gedit router.json
+gedit router.json5
 ``` 
 
 then paste the below code
 
-```json
+```json5
 {
   mode: "router",
   listen: {
@@ -253,12 +253,12 @@ then paste the below code
 ``` 
 
 ```bash
-gedit client.json
+gedit client.json5
 ``` 
 
 then paste the below code
 
-```json
+```json5
 {
   mode: "client",
   connect: {
@@ -281,7 +281,7 @@ then paste the below code
 
 ```bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
-zenohd -c /tmp/zenoh/router.json
+zenohd -c /tmp/zenoh/router.json5
 ``` 
 
 - Terminal 3
@@ -296,7 +296,7 @@ ROS_DOMAIN_ID=4 ros2 run examples_rclcpp_minimal_publisher publisher_member_func
 ```bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 export RUST_LOG=info
-zenoh-bridge-dds -c /tmp/zenoh/client.json -d 4
+zenoh-bridge-dds -c /tmp/zenoh/client.json5 -d 4
 ``` 
 
 - Terminal 5
@@ -304,7 +304,7 @@ zenoh-bridge-dds -c /tmp/zenoh/client.json -d 4
 ```bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 export RUST_LOG=info
-zenoh-bridge-dds -c /tmp/zenoh/client.json -d 6
+zenoh-bridge-dds -c /tmp/zenoh/client.json5 -d 6
 ``` 
 
 - Terminal 6
@@ -338,10 +338,10 @@ ROS_DOMAIN_ID=8 ros2 run examples_rclcpp_minimal_subscriber subscriber_member_fu
 cd /tmp/
 mkdir zenoh
 cd zenoh
-touch router.json
-touch client1.json
-touch client2.json
-touch client3.json
+touch router.json5
+touch client1.json5
+touch client2.json5
+touch client3.json5
 touch credentials.txt
 ```
 
@@ -357,12 +357,12 @@ clientusername2:clientpassword2
 ``` 
 
 ```bash
-gedit router.json
+gedit router.json5
 ``` 
 
 then paste the below code
 
-```json
+```json5
 {
   mode: "router",
   transport: {
@@ -378,12 +378,12 @@ then paste the below code
 ``` 
 
 ```bash
-gedit client1.json
+gedit client1.json5
 ``` 
 
 then paste the below code
 
-```json
+```json5
 {
   mode: "client",
   transport: {
@@ -398,12 +398,12 @@ then paste the below code
 ```
 
 ```bash
-gedit client2.json
+gedit client2.json5
 ``` 
 
 then paste the below code
 
-```json
+```json5
 {
   mode: "client",
   transport: {
@@ -418,12 +418,12 @@ then paste the below code
 ```
 
 ```bash
-gedit client3.json
+gedit client3.json5
 ``` 
 
 then paste the below code
 
-```json
+```json5
 {
   mode: "client",
   transport: {
@@ -441,7 +441,7 @@ then paste the below code
 
 ```bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
-zenohd -c /tmp/zenoh/router.json
+zenohd -c /tmp/zenoh/router.json5
 ``` 
 
 - Terminal 3
@@ -456,7 +456,7 @@ ROS_DOMAIN_ID=4 ros2 run examples_rclcpp_minimal_publisher publisher_member_func
 ```bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 export RUST_LOG=info
-zenoh-bridge-dds -c /tmp/zenoh/client1.json -d 4
+zenoh-bridge-dds -c /tmp/zenoh/client1.json5 -d 4
 ``` 
 
 - Terminal 5
@@ -464,7 +464,7 @@ zenoh-bridge-dds -c /tmp/zenoh/client1.json -d 4
 ```bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 export RUST_LOG=info
-zenoh-bridge-dds -c /tmp/zenoh/client2.json -d 6
+zenoh-bridge-dds -c /tmp/zenoh/client2.json5 -d 6
 ``` 
 
 - Terminal 6
@@ -479,7 +479,7 @@ ROS_DOMAIN_ID=6 ros2 run examples_rclcpp_minimal_subscriber subscriber_member_fu
 ```bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 export RUST_LOG=info
-zenoh-bridge-dds -c /tmp/zenoh/client3.json -d 8 
+zenoh-bridge-dds -c /tmp/zenoh/client3.json5 -d 8 
 ``` 
 
 - Terminal 8
