@@ -1,0 +1,75 @@
+<svg width="1200" height"650" viewBox="0 0 1200 650">
+  <circle cx="250" cy="500" r="150" fill="#00ccff" />
+  <text x="250" y="425" text-anchor="middle" dominant-baseline="top" font-size="1.5em" font-family="cursive" font-weight="bold" fill="white">NODE</text>
+  <ellipse cx="250" cy="525" rx="100" ry="25" fill="#2ca02c" />
+  <text x="250" y="525" text-anchor="middle" dominant-baseline="central" font-size="1.0em" font-family="cursive" font-weight="bold" fill="white">SERVICE CLIENT</text>
+  <circle cx="1000" cy="230" r="150" fill="#00ccff" />
+  <text x="1000" y="155" text-anchor="middle" dominant-baseline="top" font-size="1.5em" font-family="cursive" font-weight="bold" fill="white">NODE</text>
+  <ellipse cx="1000" cy="255" rx="100" ry="25" fill="#ff6600" />
+  <text x="1000" y="255" text-anchor="middle" dominant-baseline="central" font-size="1.0em" font-family="cursive" font-weight="bold" fill="white">SERVICE SERVER</text>
+  <circle cx="392" cy="186" r="110" fill="#00ccff" />
+  <text x="392" y="130" text-anchor="middle" dominant-baseline="top" font-size="1.5em" font-family="cursive" font-weight="bold" fill="white">NODE</text>
+  <ellipse cx="392" cy="206" rx="100" ry="25" fill="#2ca02c" />
+  <text x="392" y="206" text-anchor="middle" dominant-baseline="central" font-size="1.0em" font-family="cursive" font-weight="bold" fill="white">SERVICE CLIENT</text>
+  <rect x="550" y="300" rx="40" ry="40" width="150" height="160" fill="#00ccff" />
+  <text x="620" y="320" text-anchor="middle" dominant-baseline="central" font-size="1.0em" font-family="cursive" font-weight="bold" fill="white">SERVICE</text>
+  <path id="path1" d="m 249.988,500.13637 c 24.63622,-50.87025 61.43218,-42.55863 107.08781,-72.12581 66.29418,-40.20111 83.35738,-57.7839 113.88391,-63.72403 34.74117,-6.76026 64.14201,-2.6969 77.75261,-2.78648 49.9114,-0.32853 101.95543,-3.58014 151.86523,-4.08964 9.5824,-0.0978 22.91661,-3.69217 53.62377,-20.38818 40.44981,-39.58143 36.75206,-34.3305 56.99832,-78.61005 0,0 4.67109,-20.6586 45.49494,-58.2446 58.81793,-40.89538 116.24763,-5.63602 143.24901,29.96879" stroke="black" stroke-width="3" fill="none" />
+  <path id="path2" d="m 1008.0684,278.88013 c -30.87008,47.36969 -51.30496,70.74779 -89.39408,87.14089 -70.51116,30.7282 -99.0356,32.51158 -129.68506,37.78125 -34.88091,5.99725 -65.26031,10.08568 -78.8697,9.87694 -49.90662,-0.76541 -102.00938,1.34481 -151.91836,0.76036 -9.58224,-0.11223 -35.17721,-0.27548 -47.48326,8.02144 -21.91809,10.42511 -43.93249,41.84736 -61.56179,80.57645 0,0 -8.84287,28.50342 -50.48061,65.18569 -59.70004,39.59649 -126.92312,18.0752 -153.13772,-18.11283" stroke="black" stroke-width="3" fill="none" />
+  <path id="path3" d="m 391.77473,180.32861 c 24.63622,-50.87025 111.05753,-58.31271 148.04842,-25.65129 87.56218,62.20039 -33.22279,115.51095 -49.95853,162.34698 -11.90931,33.32897 45.23711,44.56533 58.84771,44.47575 49.9114,-0.32853 101.9555,-3.58014 151.8653,-4.08964 9.5824,-0.0978 22.9166,-3.69217 53.6237,-20.38818 40.4499,-39.58143 36.7521,-34.3305 56.9984,-78.61005 0,0 4.6711,-20.6586 45.4949,-58.2446 58.8179,-40.89538 116.2476,-5.63602 143.249,29.96879" stroke="black" stroke-width="3" fill="none" />
+  <path id="path4" d="m 1008.0683,278.88013 c -30.86996,47.36969 -51.30486,70.74779 -89.39396,87.14089 -70.5112,30.7282 -99.0356,32.51158 -129.6851,37.78125 -34.8809,5.99725 -65.2603,10.08568 -78.8697,9.87694 -49.9066,-0.76541 -102.0094,1.34481 -151.9184,0.76036 -9.5822,-0.11223 -26.94837,-0.78978 -55.71203,-1.236 -45.59801,0.37444 -73.31019,-18.90341 -87.93524,-46.47011 -32.1304,-88.79923 -30.45234,-83.7986 -27.40528,-135.61071" stroke="black" stroke-width="3" fill="none" />
+  <path id="arrow1" d="m 245.53782,550.11032 7.73703,22.21873 13.99802,-13.17221 z" stroke-width="3" />
+  <path d="m 1002.7309,231.68377 -7.61494,-22.26084 -14.07009,13.09521 z" stroke-width="3" />
+  <path d="m 574.69957,361.14741 -21.4739,-9.61277 -0.0187,19.22111 z" stroke-width="3" />
+  <path d="m 673.13166,412.51768 21.149,10.30793 0.6455,-19.21027 z" stroke-width="3" />
+  <path id="arrow2" d="m 387.14859,231.12275 -10.2482,21.17801 19.21201,0.59128 z" stroke-width="3" />
+  <ellipse id="message1" rx="30" ry="15" fill="#d45500" />
+  <text id="text1" text-anchor="middle" dominant-baseline="central" font-size="1.0em" font-family="cursive" font-weight="bold" fill="white">req</text>
+  <ellipse id="message2" rx="30" ry="15" fill="#217821" />
+  <text id="text2" text-anchor="middle" dominant-baseline="central" font-size="1.0em" font-family="cursive" font-weight="bold" fill="white">res</text>
+  <ellipse id="message3" rx="30" ry="15" fill="#d45500" />
+  <text id="text3" text-anchor="middle" dominant-baseline="central" font-size="1.0em" font-family="cursive" font-weight="bold" fill="white">req</text>
+  <ellipse id="message4" rx="30" ry="15" fill="#217821" />
+  <text id="text4" text-anchor="middle" dominant-baseline="central" font-size="1.0em" font-family="cursive" font-weight="bold" fill="white">res</text>
+  <animateMotion href="#message1" dur="5s" repeatCount="indefinite" calcMode="paced">
+    <mpath href="#path1"/>
+  </animateMotion>
+  <animateMotion href="#text1" dur="5s" repeatCount="indefinite" calcMode="paced">
+    <mpath href="#path1"/>
+  </animateMotion>
+  <animateMotion href="#message2" begin="2.5s" dur="5s" repeatCount="indefinite" calcMode="paced">
+    <mpath href="#path2"/>
+  </animateMotion>
+  <animateMotion href="#text2" begin="2.5s" dur="5s" repeatCount="indefinite" calcMode="paced">
+    <mpath href="#path2"/>
+  </animateMotion>
+  <animateMotion href="#message3" dur="5s" repeatCount="indefinite" calcMode="paced">
+    <mpath href="#path3"/>
+  </animateMotion>
+  <animateMotion href="#text3" dur="5s" repeatCount="indefinite" calcMode="paced">
+    <mpath href="#path3"/>
+  </animateMotion>
+  <animateMotion href="#message4" begin="2.5s" dur="5s" repeatCount="indefinite" calcMode="paced">
+    <mpath href="#path4"/>
+  </animateMotion>
+  <animateMotion href="#text4" begin="2.5s" dur="5s" repeatCount="indefinite" calcMode="paced">
+    <mpath href="#path4"/>
+  </animateMotion>
+  <animate href="#message1" attributeName="opacity" calcMode="discrete" keyTimes="0;0.16666" values="1;0" dur="30s" repeatCount="indefinite"/>
+  <animate href="#text1" attributeName="opacity" calcMode="discrete" keyTimes="0;0.16666" values="1;0" dur="30s" repeatCount="indefinite"/>
+  <animate href="#message2" attributeName="opacity" calcMode="discrete" keyTimes="0;0.25;0.41666" values="0;1;0" dur="30s" repeatCount="indefinite"/>
+  <animate href="#text2" attributeName="opacity" calcMode="discrete" keyTimes="0;0.25;0.41666" values="0;1;0" dur="30s" repeatCount="indefinite"/>
+  <animate href="#message3" attributeName="opacity" calcMode="discrete" keyTimes="0;0.5;0.6666" values="0;1;0" dur="30s" repeatCount="indefinite"/>
+  <animate href="#text3" attributeName="opacity" calcMode="discrete" keyTimes="0;0.5;0.6666" values="0;1;0" dur="30s" repeatCount="indefinite"/>
+  <animate href="#message4" attributeName="opacity" calcMode="discrete" keyTimes="0;0.75;0.91666" values="0;1;0" dur="30s" repeatCount="indefinite"/>
+  <animate href="#text4" attributeName="opacity" calcMode="discrete" keyTimes="0;0.75;0.91666" values="0;1;0" dur="30s" repeatCount="indefinite"/>
+  <animate href="#path1" attributeName="opacity" calcMode="discrete" keyTimes="0;0.5" values="1;0.2" dur="30s" repeatCount="indefinite"/>
+  <animate href="#path2" attributeName="opacity" calcMode="discrete" keyTimes="0;0.5" values="1;0.2" dur="30s" repeatCount="indefinite"/>
+  <animate href="#path3" attributeName="opacity" calcMode="discrete" keyTimes="0;0.5" values="0.2;1" dur="30s" repeatCount="indefinite"/>
+  <animate href="#path4" attributeName="opacity" calcMode="discrete" keyTimes="0;0.5" values="0.2;1" dur="30s" repeatCount="indefinite"/>
+  <animate href="#arrow1" attributeName="opacity" calcMode="discrete" keyTimes="0;0.5" values="1;0.2" dur="30s" repeatCount="indefinite"/>
+  <animate href="#arrow2" attributeName="opacity" calcMode="discrete" keyTimes="0;0.5" values="0.2;1" dur="30s" repeatCount="indefinite"/>
+  <rect x="572" y="340" rx="14" ry="11" width="100" height="40" fill="#7137c8" />
+  <text x="622" y="360" text-anchor="middle" dominant-baseline="central" font-size="1.0em" font-family="cursive" font-weight="bold" fill="white">REQUEST</text>
+  <rect x="572" y="390" rx="14" ry="11" width="100" height="40" fill="#7137c8" />
+  <text x="622" y="410" text-anchor="middle" dominant-baseline="central" font-size="1.0em" font-family="cursive" font-weight="bold" fill="white">RESPONSE</text>
+</svg>

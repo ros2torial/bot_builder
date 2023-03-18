@@ -1,0 +1,41 @@
+<svg width="1200" height"650" viewBox="0 0 1200 650">
+  <circle cx="250" cy="500" r="150" fill="#00ccff" />
+  <text x="250" y="500" text-anchor="middle" dominant-baseline="top" font-size="1.5em" font-family="cursive" font-weight="bold" fill="white">NODE</text>
+  <ellipse cx="250" cy="575" rx="100" ry="25" fill="#2ca02c" />
+  <text x="250" y="575" text-anchor="middle" dominant-baseline="central" font-size="1.0em" font-family="cursive" font-weight="bold" fill="white">PUBLISHER</text>
+  <circle cx="1000" cy="230" r="150" fill="#00ccff" />
+  <text x="1000" y="230" text-anchor="middle" dominant-baseline="top" font-size="1.5em" font-family="cursive" font-weight="bold" fill="white">NODE</text>
+  <ellipse cx="1000" cy="305" rx="100" ry="25" fill="#ff6600" />
+  <text x="1000" y="305" text-anchor="middle" dominant-baseline="central" font-size="1.0em" font-family="cursive" font-weight="bold" fill="white">SUBSCRIBER</text>
+  <circle cx="440" cy="175" r="120" fill="#00ccff" />
+  <text x="440" y="175" text-anchor="middle" dominant-baseline="top" font-size="1.5em" font-family="cursive" font-weight="bold" fill="white">NODE</text>
+  <ellipse cx="440" cy="225" rx="75" ry="25" fill="#ff6600" />
+  <text x="440" y="225" text-anchor="middle" dominant-baseline="central" font-size="1.0em" font-family="cursive" font-weight="bold" fill="white">SUBSCRIBER</text>
+  <path id="path1" d="m 349.99998,574.99998 c 0,0 30.01054,0.49839 44.86389,-1.29167 14.32778,-1.72672 30.00371,-1.57163 42.33333,-9.07142 9.4823,-5.76786 16.97566,-15.42533 21.16667,-25.70238 6.68506,-16.39287 4.5357,-52.91666 4.5357,-52.91666 0,0 -0.0858,-17.92522 2.26788,-26.45834 2.75694,-9.99489 5.70885,-21.25339 13.60712,-27.97023 8.01636,-6.81727 19.81175,-7.64738 30.23812,-9.07143 13.48569,-1.8419 27.21389,-0.60684 40.82449,-0.69642 49.9114,-0.32853 18.80065,0.79774 68.71045,0.28824 9.5824,-0.0978 8.435,-29.64748 6.83248,-47.28644 -1.55895,-17.15925 -1.84388,-15.34032 -5.68833,-35.13062 -5.37598,-12.1402 -11.75541,-34.85384 -61.80366,-28.79749 -21.32864,0.59077 -38.51243,3.56499 -68.34304,1.08549 -28.13194,-3.97972 -38.42235,-2.62306 -45.90368,-20.3173 -7.19273,-17.01167 -6.60054,-41.16676 -6.60054,-41.16676" stroke="black" stroke-width="3" fill="none" />
+  <path id="path2" d="m 349.99998,574.99998 c 0,0 30.01054,0.4984 44.86389,-1.29167 14.32778,-1.72673 30.00371,-1.57161 42.33333,-9.07142 9.4823,-5.76786 16.97566,-15.42533 21.16667,-25.70238 6.68506,-16.39287 4.5357,-52.91666 4.5357,-52.91666 0,0 -0.0858,-17.92522 2.26788,-26.45834 2.75694,-9.99489 5.70885,-21.25339 13.60712,-27.97023 8.01636,-6.81727 19.81175,-7.64738 30.23812,-9.07143 13.48569,-1.8419 27.21394,-0.60683 40.82454,-0.69642 49.9113,-0.32853 100.50112,-0.67168 150.4109,-1.18118 9.5825,-0.0978 23.73507,-0.32009 33.2824,-1.14621 12.2602,-1.06086 21.80594,-0.7101 30.99405,-12.09524 0,0 8.87635,-8.90083 12.09523,-24.94643 5.77399,-28.78244 3.67433,-19.23306 6.04762,-28.72619 0,0 1.60816,-15.6601 6.80358,-23.43452 4.70437,-7.0396 12.77346,-15.24377 20.41071,-18.89881 10.80549,-5.1713 23.61457,-4.05509 35.52976,-5.29167 18.37108,-1.90657 54.58851,-1.10119 54.58851,-1.10119" stroke="black" stroke-width="3" fill="none" />
+  <path d="m 899.99999,304.99999 -21.4739,-9.61277 -0.0187,19.22111 z" stroke-width="3" />
+  <path d="m 549.83723,423.33333 -21.4739,-9.61277 -0.0187,19.22111 z" stroke-width="3" />
+  <path d="m 434.52228,248.86886 -9.72141,21.42494 19.22077,0.11605 z" stroke-width="3" />
+  <ellipse id="message1" rx="40" ry="20" fill="gray" />
+  <ellipse id="message2" rx="40" ry="20" fill="gray" />
+  <!-- <ellipse id="message3" rx="40" ry="20" fill="gray" /> -->
+  <text id="text1" text-anchor="middle" dominant-baseline="central" font-size="1.25em" font-family="cursive" font-weight="bold" fill="white">msg</text>
+  <text id="text2" text-anchor="middle" dominant-baseline="central" font-size="1.25em" font-family="cursive" font-weight="bold" fill="white">msg</text>
+  <animateMotion id="animate_path1" href="#message1" dur="5s" repeatCount="indefinite" calcMode="paced">
+    <mpath href="#path1"/>
+  </animateMotion>
+  <animateMotion href="#text1" dur="5s" repeatCount="indefinite" calcMode="paced">
+    <mpath href="#path1"/>
+  </animateMotion>
+  <animateMotion id="animate_path2" href="#message2" dur="5s" repeatCount="indefinite" calcMode="paced">
+    <mpath href="#path2"/>
+  </animateMotion>
+  <animateMotion href="#text2" dur="5s" repeatCount="indefinite" calcMode="paced">
+    <mpath href="#path2"/>
+  </animateMotion>
+  <animate href="#message2" attributeName="opacity" keyTimes="0;0.5;0.5;1" values="0;0;1;1" dur="5s" repeatCount="indefinite"/>
+  <animate href="#text2" attributeName="opacity" keyTimes="0;0.5;0.5;1" values="0;0;1;1" dur="5s" repeatCount="indefinite"/>
+  <!-- <set attributeName="visibility" to="visible" begin="3s" dur="6s" fill="freeze" /> -->
+  <rect x="550" y="385" rx="20" ry="20" width="150" height="75" fill="#619f8a" />
+  <text x="625" y="420" text-anchor="middle" dominant-baseline="central" font-size="1.25em" font-family="cursive" font-weight="bold" fill="white">TOPIC</text>
+</svg>
