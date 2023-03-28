@@ -1,6 +1,6 @@
 <svg viewBox="0 0 1200 650" xmlns="http://www.w3.org/2000/svg">
   <circle cx="250" cy="500" r="150" fill="#00ccff" />
-  <text x="250" y="500" text-anchor="middle" dominant-baseline="top" font-size="1.5em" font-family="Comic Sans MS, Comic Sans, cursive" font-weight="bold" fill="white">NODE</text>
+  <text x="250" y="500" text-anchor="middle" dominant-baseline="top" font-size="1.5em" font-family="'Comic Sans MS', 'Comic Sans', cursive" font-weight="bold" fill="white">NODE</text>
   <ellipse cx="250" cy="575" rx="100" ry="25" fill="#2ca02c" />
   <text x="250" y="575" text-anchor="middle" dominant-baseline="central" font-size="1.0em" font-family="cursive" font-weight="bold" fill="white">PUBLISHER</text>
   <circle cx="1000" cy="230" r="150" fill="#00ccff" />
