@@ -11,7 +11,7 @@
   <path d="m 899.99999,304.99999 -21.4739,-9.61277 -0.0187,19.22111 z" stroke-width="3" />
   <path d="m 549.83723,423.33333 -21.4739,-9.61277 -0.0187,19.22111 z" stroke-width="3" />
   <ellipse id="message" rx="40" ry="20" fill="gray" />
-  <text id="text1" x="200" y="200" text-anchor="start" dominant-baseline="central" font-size="1.2em" font-family="cursive" font-weight="bold" fill="black">PERIODIC MESSAGE PUBLISHING (1 Hz)</text>
+  <text id="text1" x="200" y="200" text-anchor="start" dominant-baseline="central" font-size="1.2em" font-family="Comic Sans MS" font-weight="bold" fill="black">PERIODIC MESSAGE PUBLISHING (1 Hz)</text>
   <text id="text2" x="200" y="200" text-anchor="start" dominant-baseline="central" font-size="1.2em" font-family="cursive" font-weight="bold" fill="black">PERIODIC MESSAGE PUBLISHING (0.5 Hz)</text>
   <text id="text3" x="200" y="200" text-anchor="start" dominant-baseline="central" font-size="1.2em" font-family="cursive" font-weight="bold" fill="black">PERIODIC MESSAGE PUBLISHING (0.25 Hz)</text>
   <text id="text4" x="200" y="200" text-anchor="start" dominant-baseline="central" font-size="1.2em" font-family="cursive" font-weight="bold" fill="black">EVENT BASED MESSAGE PUBLISHING</text>
