@@ -58,4 +58,23 @@ sudo udevadm control --reload-rules && sudo service udev restart && sudo udevadm
 ``` 
 
 
+### To get the connected port detail
+
+before connecting the device run
+
+```bash
+ls /dev/tty* > /tmp/1
+``` 
+
+then after connecting the device run
+
+```bash
+ls /dev/tty* > /tmp/2
+``` 
+
+then compare both files
+
+```bash
+diff /tmp/1 /tmp/2
+``` 
 
