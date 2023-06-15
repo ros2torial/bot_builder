@@ -60,7 +60,13 @@ sudo udevadm control --reload-rules && sudo service udev restart && sudo udevadm
 
 ### To get the connected port detail
 
-before connecting the device run
+either after connecting the device run
+
+```bash
+dmesg | grep tty
+``` 
+
+or before connecting the device run
 
 ```bash
 ls /dev/tty* > /tmp/1
