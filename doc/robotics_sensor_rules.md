@@ -60,6 +60,8 @@ sudo udevadm control --reload-rules && sudo service udev restart && sudo udevadm
 
 ### To get the connected port detail
 
+* for ttyUSB, ttyACM devices (USB or Serial)
+  
 either after connecting the device run
 
 ```bash
@@ -83,4 +85,45 @@ then compare both files
 ```bash
 diff /tmp/1 /tmp/2
 ``` 
+
+* for input devices (intel realsense)
+
+before connecting the device run
+
+```bash
+ls /dev/input* > /tmp/1
+``` 
+
+then after connecting the device run
+
+```bash
+ls /dev/input* > /tmp/2
+``` 
+
+then compare both files
+
+```bash
+diff /tmp/1 /tmp/2
+``` 
+
+* for other devices
+  
+before connecting the device run
+
+```bash
+ls /dev/* > /tmp/1
+``` 
+
+then after connecting the device run
+
+```bash
+ls /dev/* > /tmp/2
+``` 
+
+then compare both files
+
+```bash
+diff /tmp/1 /tmp/2
+``` 
+
 
