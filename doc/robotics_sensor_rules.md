@@ -2,7 +2,7 @@
 
 By default, when you plug in a USB device, it will be assigned a name like ttyACM0, ttyUSB0 etc. If you are writing code and need to communicate with that device, you will need to know the name of the device. However, if you plug the devices into different ports or in a different order, the automatically assigned names might change. To solve this, you can create custom udev rules to always assign specific devices to a particular name.
 
-### To give permission to IMU
+### To give read/write/execute access permission to IMU
 
 Create 70-imu.rules file in /etc/udev/rules.d folder (here 70 represents priority, a priority of 99 is highest)
 
