@@ -127,3 +127,11 @@ diff /tmp/1 /tmp/2
 ``` 
 
 
+### To get real-time info of connected/disconnected devices
+
+```bash
+udevadm monitor
+``` 
+
+With udevadm monitor command, you can tap into udev in real time and see what it sees when you plug in different devices
+
