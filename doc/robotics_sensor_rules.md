@@ -135,3 +135,38 @@ udevadm monitor
 
 With udevadm monitor command, you can tap into udev in real time and see what it sees when you plug in different devices
 
+
+### To run shell/python code when the sensor is plugged or removed
+
+Create 10-trigger.rules file in /etc/udev/rules.d folder (here 10 represents priority, a priority of 99 is highest)
+
+```bash
+sudo touch /etc/udev/rules.d/10-trigger.rules
+sudo gedit /etc/udev/rules.d/10-trigger.rules
+```
+
+Set trigger actions
+
+```bash
+ATTRS{manufacturer}=="Intel(R) RealSense(TM) Depth Camera 45 ", ATTRS{idVendor}=="8066", ATTRS{idProduct}=="0a63", ATTRS{serial}=="93022392", ACTION=="add", RUN+="/usr/bin/touch /tmp/realsense_connected.txt"
+
+ENV{ID_VENDOR_ID}=="8066", ENV{ID_MODEL_ID}=="0a63", ENV{ID_VENDOR}=="Intel_R__RealSense_TM__Depth_Camera_45", ENV{ID_SERIAL_SHORT}=="93022392", ACTION=="remove", RUN+="/usr/bin/touch /tmp/realsense_disconnected.txt"
+
+ENV{ID_VENDOR_ID}=="8066", ENV{ID_MODEL_ID}=="0a63", ENV{ID_VENDOR}=="Intel_R__RealSense_TM__Depth_Camera_45", ENV{ID_SERIAL_SHORT}=="93022392", ACTION=="remove", RUN+="/usr/bin/python3 /home/abhijeet/behavior_tree/abc_pp.py"
+
+ENV{ID_VENDOR_ID}=="8066", ENV{ID_MODEL_ID}=="0a63", ENV{ID_VENDOR}=="Intel_R__RealSense_TM__Depth_Camera_45", ENV{ID_SERIAL_SHORT}=="93022392", ACTION=="remove", RUN+="/usr/bin/bash /home/abhijeet/behavior_tree/abc_sh.sh"
+``` 
+
+for triggering when device is plugged use ATTRS{idVendor} kind of attributes, you will get this values from 
+
+```bash
+udevadm info -a -n /dev/input/event4
+```
+
+for triggering when device is unplugged use ENV{ID_VENDOR} kind of attributes, you will get this values from 
+
+```bash
+udevadm monitor --property
+```
+
+
