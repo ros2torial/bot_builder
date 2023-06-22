@@ -152,9 +152,9 @@ ATTRS{manufacturer}=="Intel(R) RealSense(TM) Depth Camera 45 ", ATTRS{idVendor}=
 
 ENV{ID_VENDOR_ID}=="8066", ENV{ID_MODEL_ID}=="0a63", ENV{ID_VENDOR}=="Intel_R__RealSense_TM__Depth_Camera_45", ENV{ID_SERIAL_SHORT}=="93022392", ACTION=="remove", RUN+="/usr/bin/touch /tmp/realsense_disconnected.txt"
 
-ENV{ID_VENDOR_ID}=="8066", ENV{ID_MODEL_ID}=="0a63", ENV{ID_VENDOR}=="Intel_R__RealSense_TM__Depth_Camera_45", ENV{ID_SERIAL_SHORT}=="93022392", ACTION=="remove", RUN+="/usr/bin/python3 /home/abhijeet/behavior_tree/abc_pp.py"
+ENV{ID_VENDOR_ID}=="8066", ENV{ID_MODEL_ID}=="0a63", ENV{ID_VENDOR}=="Intel_R__RealSense_TM__Depth_Camera_45", ENV{ID_SERIAL_SHORT}=="93022392", ACTION=="remove", RUN+="/usr/bin/python3 /home/user/abc_pp.py"
 
-ENV{ID_VENDOR_ID}=="8066", ENV{ID_MODEL_ID}=="0a63", ENV{ID_VENDOR}=="Intel_R__RealSense_TM__Depth_Camera_45", ENV{ID_SERIAL_SHORT}=="93022392", ACTION=="remove", RUN+="/usr/bin/bash /home/abhijeet/behavior_tree/abc_sh.sh"
+ENV{ID_VENDOR_ID}=="8066", ENV{ID_MODEL_ID}=="0a63", ENV{ID_VENDOR}=="Intel_R__RealSense_TM__Depth_Camera_45", ENV{ID_SERIAL_SHORT}=="93022392", ACTION=="remove", RUN+="/usr/bin/bash /home/user/abc_sh.sh"
 ``` 
 
 for triggering when device is plugged use ATTRS{idVendor} kind of attributes, you will get this values from 
