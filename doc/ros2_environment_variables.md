@@ -64,6 +64,10 @@ to just use localhost only in a particular ros2 executable or launch file
 ROS_LOCALHOST_ONLY=1 ros2 run demo_nodes_cpp talker
 ``` 
 
+### To check the ROS 2 environment variables with their values
 
+```bash
+printenv | grep -i ROS
+``` 
 
 
