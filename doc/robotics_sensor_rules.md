@@ -181,6 +181,17 @@ ENV{ID_VENDOR_ID}=="8066", ENV{ID_MODEL_ID}=="0a63", ENV{ID_VENDOR}=="Intel_R__R
 if this realsense device is plugged then /tmp/realsense_connected.txt file is created, if it is unplugged then /tmp/realsense_disconnected.txt file is created, /home/user/realsense_disconnected.py and /home/user/realsense_disconnected.sh files are executed.
 
 
+### To observe the execution of run commands through udev rules 
 
+```bash
+udevadm control --log-priority=debug
+journalctl -f
+```
+
+to set it back to previous level
+
+```bash
+udevadm control --log-priority=info
+```
 
 
