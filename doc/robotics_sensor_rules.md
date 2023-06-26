@@ -143,7 +143,7 @@ udevadm monitor
 With udevadm monitor command, you can tap into udev in real time and see what it sees when you plug in different devices. When a device is plugged in then action such as add, bind are shown. In case of device unplugging unbind, remove are shown.
 
 
-### To run shell/python code when the sensor is plugged or removed
+### To run shell/python/ros2 code when the sensor is plugged or removed
 
 Get the idVendor, idProduct, serial etc find out the connection, usually intel relasense gets connection like /dev/input/event*. You can find this using the *To get the connected port detail* section.  If the connection is /dev/input/event0 then run 
 
@@ -179,6 +179,16 @@ ENV{ID_VENDOR_ID}=="8066", ENV{ID_MODEL_ID}=="0a63", ENV{ID_VENDOR}=="Intel_R__R
 ```
 
 if this realsense device is plugged then /tmp/realsense_connected.txt file is created, if it is unplugged then /tmp/realsense_disconnected.txt file is created, /home/user/realsense_disconnected.py and /home/user/realsense_disconnected.sh files are executed.
+
+```bash
+SUBSYSTEMS=="usb", ATTRS{serial}=="HY45GTYU", ATTRS{idProduct}=="0360", ATTRS{idVendor}=="8689", ATTRS{manufacturer}=="IMU", ACTION=="add", RUN+="/bin/su user_name -c 'export HOME=root; export ROS_DOMAIN_ID=0; export ROS_LOG_DIR=/home/user_name/log; source /opt/ros/humble/setup.bash; ros2 topic pub -1 -w 0 /imu_status std_msgs/msg/String \"data: \"device plugged in\"\"'"
+```
+
+get **user_name** value from running 
+```bash
+whoami
+```
+here we are running without root privilages */bin/su user_name* as root privilages causes ros2 publisher to be discovered only by root privilaged ros2 subscriber. Hence we are ruuning it with *user_name* privilage only. Also in order to run the ros2 commands through udev it is necessary to define **HOME, ROS_DOMAIN_ID and ROS_LOG_DIR** environment variables, otherwise ros2 command won't run.
 
 
 ### To observe the execution of run commands through udev rules 
