@@ -41,3 +41,29 @@ sudo systemctl daemon-reload
 sudo systemctl enable my-ros2-publisher.service
 sudo systemctl start my-ros2-publisher.service
 ```
+
+
+### To add other features
+
+
+```bash
+[Unit]
+Description=ROS 2 Publisher
+
+[Service]
+Type=simple
+Environment="HOME=root"
+Environment="ROS_DOMAIN_ID=0"
+Environment="ROS_LOG_DIR=/home/user_name/log"
+User=user_name
+WorkingDirectory=/home/user_name/
+ExecStart=/bin/bash -c 'source /opt/ros/humble/setup.bash; ros2 topic pub -1 -w 0 /abc std_msgs/msg/String "data: \'abc\'"'
+KillMode=mixed
+KillSignal=SIGINT
+RestartKillSignal=SIGINT
+Restart=on-failure
+RestartSec=30s
+
+[Install]
+WantedBy=multi-user.target
+```
