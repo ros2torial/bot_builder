@@ -204,4 +204,8 @@ to set it back to previous level
 udevadm control --log-priority=info
 ```
 
+### To connect udev event to systemd service
 
+```bash
+ATTRS{idProduct}=="0360", ATTRS{idVendor}=="8689", ATTRS{manufacturer}=="IMU", ACTION=="add", TAG+="systemd", ENV{SYSTEMD_WANTS}+="my-ros2-publisher.service"
+```
