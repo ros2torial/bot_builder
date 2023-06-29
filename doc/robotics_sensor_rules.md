@@ -181,7 +181,7 @@ ENV{ID_VENDOR_ID}=="8066", ENV{ID_MODEL_ID}=="0a63", ENV{ID_VENDOR}=="Intel_R__R
 if this realsense device is plugged then /tmp/realsense_connected.txt file is created, if it is unplugged then /tmp/realsense_disconnected.txt file is created, /home/user/realsense_disconnected.py and /home/user/realsense_disconnected.sh files are executed.
 
 ```bash
-SUBSYSTEMS=="usb", ATTRS{serial}=="HY45GTYU", ATTRS{idProduct}=="0360", ATTRS{idVendor}=="8689", ATTRS{manufacturer}=="IMU", ACTION=="add", RUN+="/bin/su user_name -c 'export HOME=root; export ROS_DOMAIN_ID=0; export ROS_LOG_DIR=/home/user_name/log; source /opt/ros/humble/setup.bash; ros2 topic pub -1 -w 0 /imu_status std_msgs/msg/String \"data: \"device plugged in\"\"'"
+SUBSYSTEMS=="usb", ATTRS{serial}=="HY45GTYU", ATTRS{idProduct}=="0360", ATTRS{idVendor}=="8689", ATTRS{manufacturer}=="IMU", ACTION=="add", RUN+="/bin/su user_name -c 'export HOME=root; export ROS_DOMAIN_ID=0; export ROS_LOG_DIR=/home/user_name/log; source /opt/ros/humble/setup.bash; ros2 topic pub -1 -w 0 /imu_status std_msgs/msg/String \"data: \"device_plugged_in\"\"'"
 ```
 
 get **user_name** value from running 
@@ -194,14 +194,14 @@ here we are running without root privilages */bin/su user_name* as root privilag
 ### To observe the execution of run commands through udev rules 
 
 ```bash
-udevadm control --log-priority=debug
+sudo udevadm control --log-priority=debug
 journalctl -f
 ```
 
 to set it back to previous level
 
 ```bash
-udevadm control --log-priority=info
+sudo udevadm control --log-priority=info
 ```
 
 ### To connect udev event to systemd service
