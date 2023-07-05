@@ -17,3 +17,5 @@
 * Explain Nav2 architecture
   * https://navigation.ros.org/_images/nav2_architecture.png 
 
+* Explain Moveit2 architecture
+  * https://moveit.picknik.ai/main/_images/moveit_pipeline.png
