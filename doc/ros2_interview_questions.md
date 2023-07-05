@@ -19,3 +19,6 @@
 
 * Explain Moveit2 architecture
   * https://moveit.picknik.ai/main/_images/moveit_pipeline.png
+
+* Explain ros2_control architecture
+  * https://control.ros.org/master/_images/components_architecture.png
