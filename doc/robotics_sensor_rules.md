@@ -209,3 +209,59 @@ sudo udevadm control --log-priority=info
 ```bash
 ATTRS{idProduct}=="0360", ATTRS{idVendor}=="8689", ATTRS{manufacturer}=="IMU", ACTION=="add", TAG+="systemd", ENV{SYSTEMD_WANTS}+="my-ros2-publisher.service"
 ```
+
+### To give permission to joystick
+
+```bash
+ros2 run joy joy_enumerate_devices
+ros2 launch teleop_twist_joy teleop-launch.py
+```
+
+Sometimes, the above first commands will not show the connected joystick device and second command won't publish data on **/cmd_vel** if we are using ubuntu server. If this problem happens then follow the below step
+
+before connecting the device run
+
+```bash
+ls /dev/input* > /tmp/1
+``` 
+
+then after connecting the device run
+
+```bash
+ls /dev/input* > /tmp/2
+``` 
+
+then compare both files
+
+```bash
+diff /tmp/1 /tmp/2
+``` 
+
+if the difference provides event12 then run
+
+```bash
+udevadm info -a -n /dev/input/event12
+```
+
+and find idVendor, idProduct, manufacturer etc.
+
+Create 70-joystick.rules file in /etc/udev/rules.d folder (here 70 represents priority, a priority of 99 is highest)
+
+```bash
+sudo touch /etc/udev/rules.d/70-joystick.rules
+sudo gedit /etc/udev/rules.d/70-joystick.rules
+```
+
+Set permission to read, write and execute, fill attributes as per device info
+
+```bash
+ATTRS{idVendor}=="2734", ATTRS{idProduct}=="0980", ATTRS{manufacturer}=="XB avanti", MODE="0777"
+``` 
+
+```bash
+ros2 launch teleop_twist_joy teleop-launch.py  joy_config:=xbox
+``` 
+
+```bash
+ros2 topic echo /cmd_vel
+``` 
