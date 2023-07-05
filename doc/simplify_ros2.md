@@ -26,6 +26,13 @@ https://answers.gazebosim.org//question/14625/running-a-camera-sensor-headless/
 
 ### Linux commands to simplify ros2
 
+* To get the ros2 related environment variable
+
+```bash
+export | grep -E 'ROS|RMW|GAZEBO'
+```
+*grep -E* with *|* is used for OR gate
+
 * To find the specific name in ros2 command output
 
 ```bash
