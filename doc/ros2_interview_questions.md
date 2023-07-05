@@ -22,3 +22,7 @@
 
 * Explain ros2_control architecture
   * https://control.ros.org/master/_images/components_architecture.png
+
+* Advantage of Behavior tree over Finite State Machine
+  * Ans - Reactiveness and Modularity
+  * https://arxiv.org/pdf/1709.00084.pdf (page 11)
