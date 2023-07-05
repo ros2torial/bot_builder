@@ -14,3 +14,6 @@
   * feedback and status are topics
   * ask about cancel and status
 
+* Explain Nav2 architecture
+  * https://navigation.ros.org/_images/nav2_architecture.png 
+
